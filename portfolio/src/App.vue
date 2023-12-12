@@ -26,7 +26,7 @@
 
     body {
         margin: 0 auto;
-        background-color: #0c1730;
+        background-color: #1E1042;
     }
     #app {
         font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -34,7 +34,7 @@
         -moz-osx-font-smoothing: grayscale;
 
         text-align: center;
-        color: #ffffff;
+        color: #D1CCDC;
         display: flex;
         flex-direction: column;
         min-height: 100vh;

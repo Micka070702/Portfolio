@@ -26,8 +26,8 @@
             <b>Navigation</b>
                 <ul class="link-group">
                     <router-link to="/">Home</router-link>
-                    <router-link to="/about">About</router-link>
                     <router-link to="/project">Project</router-link>
+                    <router-link to="/Cv">Cv</router-link>
                     <!-- Ajoutez d'autres liens de navigation si nécessaire -->
                 </ul>
         </div>
@@ -50,8 +50,8 @@
     .footer {
         display: flex;
         color: white;
-        background-color: #1a303f;
-        border-top: 2px solid #81cfe0;
+        background-color: #170C31;
+        border-top: 2px solid #8A4FFF;
         padding-top: 20px;
         padding-bottom: 20px;
         width: 100%;
@@ -67,7 +67,7 @@
     }
     .link-group a {
         display: block;
-        color: #81cfe0;
+        color: #D1CCDC;
         text-decoration: none;
     }
 

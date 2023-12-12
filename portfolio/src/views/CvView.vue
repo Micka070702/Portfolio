@@ -1,14 +1,14 @@
 <template>
-    <div class="project">
+    <div class="cv">
         <HelloWorld/>
     </div>
 </template>
 
 <script>
-    import HelloWorld from '@/components/ProjectPage.vue'
+    import HelloWorld from '@/components/CvPage.vue'
 
     export default {
-        name: 'HomeView',
+        name: 'CvView',
         components: {
             HelloWorld
         }
