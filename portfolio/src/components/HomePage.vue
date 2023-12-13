@@ -1,59 +1,77 @@
 <template>
-  <div class="home">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
-  </div>
+    <div class="home">
+        <div class="name">
+            <h1>Mickael Aïtelli</h1>
+        </div>
+        <div class="description">
+            <p class="subtitle">{{ dynamicText }}</p>
+        </div>
+    </div>
 </template>
+
 
 <script>
     export default {
         name: 'HomePage',
-        props: {
-            msg: String
-        }
-    }
+        data() {
+            return {
+                descriptionText: "Developer Student at Epitech . . .",
+                dynamicText: "",
+                loopInterval: null,
+                loopDelay: 8000, // Set the delay for the loop in milliseconds
+            };
+        },
+        mounted() {
+            this.startTypingAnimation();
+        },
+        methods: {
+            startTypingAnimation() {
+                this.typeWriter();
+                this.loopInterval = setInterval(() => {
+                    this.dynamicText = "";
+                    this.typeWriter();
+                }, this.loopDelay);
+            },
+            typeWriter() {
+                const speed = 150; // Adjust the typing speed in milliseconds
+                let i = 0;
+                const text = this.descriptionText;
+                const typeInterval = setInterval(() => {
+                    this.dynamicText += text.charAt(i);
+                    i++;
+                    if (i === text.length) {
+                        clearInterval(typeInterval);
+                    }
+                }, speed);
+            },
+        },
+        beforeUnmount() {
+            clearInterval(this.loopInterval);
+        },
+    };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
 
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #2272FF;
-}
+<style scoped>
+    .home {
+        text-align: center;
+        margin-top: 200px;
+    }
+
+    .name h1 {
+        font-size: 5em;
+        margin-bottom: 10px;
+        color: #ffff; /* Adjust color as needed */
+    }
+
+    .description {
+        margin-top: 10px;
+    }
+
+    .subtitle {
+        font-size: 2em;
+        font-style: italic;
+        color: #D1CCDC; /* Adjust color as needed */
+        white-space: nowrap; /* Prevent line breaks */
+    }
 </style>

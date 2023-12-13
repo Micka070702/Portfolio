@@ -10,7 +10,7 @@
         <div class="footer-content">
             <b>Me Contacter</b>
             <div class="link-group">
-                <a href="https://www.linkedin.com/in/micka%C3%ABl-a%C3%AFtelli-39000a246/">Linkedin</a>
+                <a href="mailto:mickael.aitelli@epitech.eu">e-mail</a>
             </div>
         </div>
 
@@ -47,6 +47,17 @@
 
 
 <style scoped>
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    .content {
+        flex: 1;
+    }
+
     .footer {
         display: flex;
         color: white;
@@ -55,16 +66,18 @@
         padding-top: 20px;
         padding-bottom: 20px;
         width: 100%;
-        margin-top: 100px;
     }
+
     .footer-content {
         display: inline-block;
         margin-right: 50px;
         text-align: left;
     }
+
     .footer-content:first-child {
         margin-left: 10%;
     }
+
     .link-group a {
         display: block;
         color: #D1CCDC;
@@ -77,6 +90,5 @@
         padding: 0;
         margin: 10px 0 0;
     }
-
-
 </style>
+

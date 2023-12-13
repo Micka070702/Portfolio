@@ -3,7 +3,7 @@
     <header class="header">
         <nav>
             <ul>
-                <li><router-link to="/">MICKAEL AITELLI</router-link></li>
+                <li class="micka"><router-link to="/">MICKAEL AITELLI</router-link></li>
                 <li><router-link to="/project">Project</router-link></li>
                 <li><router-link to="/cv">Cv</router-link></li>
                 <!-- Ajoutez d'autres liens de navigation si nécessaire -->
@@ -23,8 +23,11 @@
 <style scoped>
     .header {
         background-color:#170C31;
-        text-align: right;
+        text-align: left;
         padding: 30px;
+    }
+    .micka {
+        margin-left: 10%;
     }
     nav ul {
         list-style-type: none;

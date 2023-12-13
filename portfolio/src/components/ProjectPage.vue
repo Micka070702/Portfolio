@@ -60,7 +60,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div><br><br><br>
 
     </div>
 
@@ -75,10 +75,10 @@
                 personal_projects: [
                     {
                         id: 1,
-                        title: 'nothing',
-                        description: 'Time: ...<br>....<br><br>Fonctionnalités clés incluant: ...',
-                        tech: ['Nothing'],
-                        image: 'comingsoon.jpeg',
+                        title: 'Portfolio',
+                        description: 'Time: 1.5 weeks<br>Création d\'un portfolio affin débuter l\'apprentissage du web<br><br>Fonctionnalités clés incluant: asset de projets, afichage du cv et télechargement',
+                        tech: ['Vue.js'],
+                        image: 'portfolio.png',
                         githublink: "."
                     }
                 ],
@@ -193,7 +193,6 @@
     background-color: #390040;
     border-radius: 3px;
     padding: 4px;
-    /* transform: scale(1.1); */
     transition: 0.3s;
     margin: -4px;
 }
