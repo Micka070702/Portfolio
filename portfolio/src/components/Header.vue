@@ -2,10 +2,10 @@
 <template>
     <header class="header">
         <nav>
-            <ul>
+            <ul class="container">
                 <li class="micka"><router-link to="/">MICKAEL AITELLI</router-link></li>
-                <li><router-link to="/project">Project</router-link></li>
-                <li><router-link to="/cv">Cv</router-link></li>
+                <li><router-link to="/project">PROJECTS</router-link></li>
+                <li><router-link to="/cv">CV</router-link></li>
                 <!-- Ajoutez d'autres liens de navigation si nécessaire -->
             </ul>
         </nav>
@@ -37,6 +37,11 @@
     nav li {
         display: inline-block;
         margin-right: 20px;
+    }
+    li:hover {
+        background-color: #3f2183;
+        border-radius: 3px;
+        transition: 0.3s;
     }
     nav a {
         text-decoration: none;

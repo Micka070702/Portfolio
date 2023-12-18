@@ -2,7 +2,7 @@
 
     <div class="all-page">
         <div class="main-title">
-            <br><br><br><br><br>
+            <br><br><br>
             <h1> Personal Projects</h1>
             <p>Ci-dessous, mes projets personels ou, aux quels j'ai pu participer.</p><br>
         </div>
@@ -76,10 +76,26 @@
                     {
                         id: 1,
                         title: 'Portfolio',
-                        description: 'Time: 1.5 weeks<br>Création d\'un portfolio affin débuter l\'apprentissage du web<br><br>Fonctionnalités clés incluant: asset de projets, afichage du cv et télechargement',
+                        description: 'Time: 1.5 weeks<br>Création d\'un portfolio afin de découvrir le web<br><br>Fonctionnalités clés incluant: asset de projets, afichage du cv et téléchargement',
                         tech: ['Vue.js'],
                         image: 'portfolio.png',
-                        githublink: "."
+                        githublink: "https://github.com/Micka070702/Portfolio"
+                    },
+                    {
+                        id: 2,
+                        title: 'Portfolio',
+                        description: 'Time: 1.5 weeks<br>Création d\'un portfolio afin de découvrir le web<br><br>Fonctionnalités clés incluant: asset de projets, afichage du cv et téléchargement',
+                        tech: ['Vue.js'],
+                        image: 'portfolio.png',
+                        githublink: "https://github.com/Micka070702/Portfolio"
+                    },
+                    {
+                        id: 1,
+                        title: 'Portfolio',
+                        description: 'Time: 1.5 weeks<br>Création d\'un portfolio afin de découvrir le web<br><br>Fonctionnalités clés incluant: asset de projets, afichage du cv et téléchargement',
+                        tech: ['Vue.js'],
+                        image: 'portfolio.png',
+                        githublink: "https://github.com/Micka070702/Portfolio"
                     }
                 ],
 
@@ -190,7 +206,7 @@
         margin-right: 30px;
     }
     .github-link-container:hover .github-link {
-    background-color: #390040;
+    background-color: #3f2183;
     border-radius: 3px;
     padding: 4px;
     transition: 0.3s;

@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         <div class="name">
-            <h1>Mickael Aïtelli</h1>
+            <h1>Mickaël Aïtelli</h1>
         </div>
         <div class="description">
             <p class="subtitle">{{ dynamicText }}</p>
